@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix - Clone</title>
+  <!--=== FAVICON ===-->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Netflix - Clone" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  <!--=== FONTAWESOME ===-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--=== OWLCAROUSEL2 ===-->
+  <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+  <!--=== MAIN CSS ===-->
+  <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/img/Netflix-Logo.png" alt="Netflix Logomarca">
+        </a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__links">
+          <li>
+            <a href="#" class="active">Início</a>
+          </li>
+
+          <li>
+            <a href="#">Assista de novo</a>
+          </li>
+
+          <li>
+            <a href="#">Séries</a>
+          </li>
+
+          <li>
+            <a href="#">Filmes</a>
+          </li>
+
+          <li>
+            <a href="#">Bombando</a>
+          </li>
+
+          <li>
+            <a href="#">Minha Lista</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main-movie">
+      <div class="main-movie__poster">
+        <img src="assets/img/main-poster.jpg" alt="">
+      </div>
+
+      <div class="main-movie__info">
+        <div class="main-movie__title">
+          <h3>Pegando Fogo</h3>
+        </div>
+
+        <div class="main-movie__synopsis">
+          <p>
+            Um chef que destruiu sua carreira por causa de imprudência e mau comportamento volta a Londres para tentar
+            se
+            redimir e recuperar o prestígio.
+          </p>
+        </div>
+
+        <div class="main-movie__buttons">
+          <div class="main-movie__buttons-play">
+            <a href="#">
+              <i class="fas fa-play fa-fw"></i>
+              Assistir
+            </a>
+          </div>
+
+          <div class="main-movie__buttons-info">
+            <button>
+              <i class="fas fa-info-circle fa-fw"></i>
+              Mais informações
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="movie">
+        <div class="movie__poster">
+          <img src="assets/img/poster.jpg" alt="Jungle">
+        </div>
+
+        <div class="movie__info">
+          <h3>Jungle</h3>
+
+          <span class="${getColor(vote_average)}">
+            9.0
+          </span>
+        </div>
+
+        <div class="movie__overview">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero animi! Dicta vel harum unde
+            excepturi molestiae officia odit veniam! Ad unde voluptates rem expedita nam nemo praesentium quaerat
+            veritatis?
+          </p>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="container">
+      <div class="popular-movies">
+        <div class="popular-movies__title">
+          <h2>Populares na Netflix</h2>
+        </div>
+
+        <div class="popular-movies__carousel owl-carousel owl-theme">
+          <div class="item">
+            <img src="assets/img/img (1).jpg" alt="Filme 1">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (2).jpg" alt="Filme 2">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (3).jpg" alt="Filme 3">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (4).jpg" alt="Filme 4">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (5).jpg" alt="Filme 5">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (6).jpg" alt="Filme 6">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (7).jpg" alt="Filme 7">
+          </div>
+        </div>
+      </div>
+
+      <div class="high-movies">
+        <div class="high-movies__title">
+          <h2>Em alta</h2>
+        </div>
+
+        <div class="high-movies__carousel owl-carousel owl-theme">
+          <div class="item">
+            <img src="assets/img/img (4).jpg" alt="Filme 4">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (6).jpg" alt="Filme 6">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (7).jpg" alt="Filme 7">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (1).jpg" alt="Filme 1">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (5).jpg" alt="Filme 5">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (2).jpg" alt="Filme 2">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (3).jpg" alt="Filme 3">
+          </div>
+        </div>
+      </div>
+
+      <div class="action-movies">
+        <div class="action-movies__title">
+          <h2>Em alta</h2>
+        </div>
+
+        <div class="action-movies__carousel owl-carousel owl-theme">
+          <div class="item">
+            <img src="assets/img/img (3).jpg" alt="Filme 3">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (5).jpg" alt="Filme 5">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (7).jpg" alt="Filme 7">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (1).jpg" alt="Filme 1">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (6).jpg" alt="Filme 6">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (2).jpg" alt="Filme 2">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/img (4).jpg" alt="Filme 4">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Clone feito durante o Bootcamp HTML Web Developer da Digital Innovation One.</p>
+
+      <div class="footer__social-link">
+        <a href="https://www.facebook.com/BrunoZielinski26/" target="_blank">
+          <i class="fab fa-facebook-f fa-fw"></i>
+        </a>
+
+        <a href="https://www.instagram.com/brunozielinski/" target="_blank">
+          <i class="fab fa-instagram fa-fw"></i>
+        </a>
+
+        <a href="https://github.com/BrunoZielinski/" target="_blank">
+          <i class="fab fa-github fa-fw"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/brunozielinski/" target="_blank">
+          <i class="fab fa-linkedin fa-fw"></i>
+        </a>
+      </div>
+
+      <p>&copy 2021 Bruno Zielinski</p>
+    </div>
+  </footer>
+
+  <!--=== JQUEY ===-->
+  <script src="plugins/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <!--=== OWLCAROUSEL2 ===-->
+  <script src="plugins/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+  <!--=== MAIN JS ===-->
+  <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>
